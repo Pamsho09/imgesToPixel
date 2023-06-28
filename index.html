@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="flex flex-col w-full gap-14 items-center p-11">
+    <div class="w-full mt-8">
+      <h3 class="font-bold text-6xl text-center">
+        Converte to images from PixelArts
+      </h3>
+    </div>
+    <div>
+      <label
+        for="filesImg"
+        class="px-6 py-3 font-bold text-2xl bg-gray-900 text-white rounded-md cursor-pointer"
+        >UploadFiles</label
+      >
+      <input type="file" id="filesImg" multiple="multiple" class="hidden" />
+    </div>
+    <div class="grid grid-cols-2 gap-6 w-full justify-center">
+      <div class="flex flex-col flex-1 w-full">
+        <h4 class="uppercase text-center text-1xl font-medium">from</h4>
+        <div id="img_container" class="flex flex-wrap"></div>
+      </div>
+      <div class="flex flex-col flex-1 w-full">
+        <h4 class="uppercase text-center text-1xl font-medium">TO</h4>
+        <div id="pixel_container" class="flex flex-wrap"></div>
+      </div>
+    </div>
+    <div>
+      <button
+        id="btnDownload"
+        class="px-6 py-3 font-bold text-2xl bg-gray-900 text-white rounded-md cursor-pointer"
+      >
+        Download
+      </button>
+    </div>
+  </body>
+
+  <script type="module" src="/index.js"></script>
+</html>
